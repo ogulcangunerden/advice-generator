@@ -27,8 +27,8 @@ const Advice = () => {
   return (
     <Center style={{ height: "100%", width: "100%" }}>
       <Flex direction="column">
-        <Paper withBorder>
-          <h3>{advice.slip?.id}</h3>
+        <Paper withBorder p="lg">
+          <h3> Advice {advice.slip?.id}#</h3>
           <Text>{advice.slip?.advice}</Text>
         </Paper>
         <Button mt="md" radius="md" color="red" onClick={clickHandler}>
